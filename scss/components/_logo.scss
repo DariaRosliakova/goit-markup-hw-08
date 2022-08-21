@@ -1,0 +1,32 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    }    
+    &__logo--dark {
+        color: var(--logo-cl);
+        margin-right: 276px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 92px;
+        }
+    }
+
+    &__logo--light {
+        color: var(--white-txt-cl);
+    }
+
+    &__logo--blue {
+        color: var(--accent-txt-cl);
+    }
+}
+

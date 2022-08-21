@@ -1,0 +1,83 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    &__container {            
+        display: flex;
+        align-items: center;
+    }
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    &__phone,
+    &__mail {
+        display: flex;
+        align-items: center;       
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: var(--secondary-txt-cl);
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+
+    &__tel-text,
+    &__mail-text {
+        transition: color var(--transition)
+    }
+
+    &__icon {
+        // width: 14px;
+        // height: 10px;
+        margin-right: 8px;
+        fill: var(--secondary-txt-cl);
+        transition: fill var(--transition);
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;            
+        }
+    }
+
+    &__mail:hover &__icon,
+    &__mail:focus &__icon,    
+    &__mail:hover &__mail-text,
+    &__mail:focus &__mail-text,
+    &__phone:hover &__icon,
+    &__phone:focus &__icon,    
+    &__phone:hover &__tel-text,
+    &__phone:focus &__tel-text {
+        fill: var(--accent-txt-cl);
+        color: var(--accent-txt-cl);
+    }
+}
+.contacts-list__mail .contacts-list__icon {
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+    
+}
+.contacts-list__phone .contacts-list__icon {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+
+}
