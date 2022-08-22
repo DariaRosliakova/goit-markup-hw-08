@@ -1265,7 +1265,7 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 350px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .filter-list {
@@ -1276,12 +1276,12 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter-list {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
