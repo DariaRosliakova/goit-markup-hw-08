@@ -84,6 +84,7 @@
 
 .filter-list {
     display: flex;
+    
     flex-wrap: wrap;
     max-width: 350px;
 
@@ -145,5 +146,6 @@
     &--others-btn {
         color: currentColor;
         background-color: var(--light-bg-cl);
+        margin-bottom: 15px;
     }
 }
